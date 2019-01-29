@@ -14,7 +14,7 @@ def get_notes():
     message=""
     return render_template("notes.html", message=message, notes=notes)
 
-app.route('/notes', methods=['POST'])
+@app.route('/notes', methods=['POST'])
 def post_notes():
     global notes
     message="Note = '" + request.form.get("note") + "'"
