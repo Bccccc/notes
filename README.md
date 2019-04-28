@@ -1,2 +1,2 @@
 # notes
-Notes app
+Notes app for web class
